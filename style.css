@@ -1,0 +1,271 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    font-family: 'Oswald', sans-serif;
+}
+
+.landingPage {
+    background-image: url('assets/landingPage.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    height: 800px;
+    width: 100%;
+    filter: brightness(90%);
+    position: relative;
+}
+
+.halo {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    top: 45%;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.nav {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    font-size: 16px;
+    color: white;
+    list-style: none;
+    text-align: right;
+}
+
+.logo {
+    float: left;
+    text-align: left;
+    padding: 3px 10px 0;
+}
+
+li {
+    padding: 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+li:hover {
+    background-color: teal;
+    transition-delay: .1s;
+    transition: .5s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#aboutMe {
+    padding: 20px;
+    height: 600px;
+}
+
+.about {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-about {
+    display: block;
+}
+
+.span-about {
+    width: 300px;
+    white-space: wrap;
+    text-align: justify;
+}
+
+.about-content, .contact-content {
+    display: flex;
+    justify-content: center;
+}
+
+#myPortofolio {
+    padding: 20px;
+    height: 700px;
+    padding: 2em 0;
+}
+
+.title {
+    text-align: center;
+    text-decoration: underline;
+    padding: 30px;
+}
+
+.image {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.img-porto {
+    max-width: 300px;
+    display: inline-block;
+    width: 90%;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+hr {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contactMe {
+    height: 600px;
+}
+
+.formData {
+    display: block;
+}
+
+form {
+    padding: 30px;
+}
+
+label {
+    width: 650px;
+    display: block;
+    padding: 5px 0;
+}
+
+input, textarea {
+    width: 650px;
+    padding: 1px 2px;
+    display: block;
+}
+
+.kirim {
+    margin-top: 15px;
+    background-color: teal;
+    width: 650px;
+    padding: 10px 30px;
+    color: white;
+    border: none;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-mobile {
+    display: none;
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+}
+
+.img-contact {
+    width: 15%;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.span-contact {
+    color: black;
+    display: inline-block;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 900px){
+    /* untuk membuat menu responsive */
+    html {
+        font-size: 12px;
+    }
+
+    .navbar {
+        text-align: center;
+    }
+
+    li {
+        padding: 20px;
+    }
+
+    #aboutMe {
+        height: 650px;
+    }
+
+    .about-content, .contact-content {
+        display: block;
+    }
+
+    #myPortofolio {
+        padding: 20px;
+        height: 100%;
+    }
+
+    .image {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .img-porto {
+        width: 80%;
+        display: block;
+    }
+    
+    #contactMe {
+        height: 100%;
+    }
+
+    .contact-content {
+        height: 100%;
+    }
+
+    form {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    label, input, textarea, .kirim {
+        width: 300px;
+    }    
+
+    .contact {
+        display: inline-block;
+    }
+
+    .img-contact {
+        padding: 30px;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
